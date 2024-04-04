@@ -4,4 +4,16 @@
 .footer {
   display: none;
   // We need to show footer with its navigation at mobile (tablet) screens
+  &__nav {
+    .footer__nav-list {
+      .footer__nav-list-item {
+        .footer__link {
+          .footer__link-img {
+          }
+          .footer__link-text {
+          }
+        }
+      }
+    }
+  }
 }

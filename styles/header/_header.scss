@@ -6,7 +6,23 @@
   min-height: 84px;
   display: flex;
   align-items: center;
+  &__burger-btn {
+  }
+  &__youtube-link {
+  }
+  &__search-input {
+  }
+  &__btns-wrapper {
+    .header__btn-camera {
+    }
+    .header__btn-nine-dots {
+    }
+    .header__btn-bell {
+    }
+  }
   &__btn-search {
     display: none;
+  }
+  &__btn-profile {
   }
 }
