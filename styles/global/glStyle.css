@@ -1,1 +1,13 @@
-/*# sourceMappingURL=glStyle.css.map */
+.global-container {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.hidden-element {
+  display: none !important;
+}
+
+.appeared-flex {
+  display: flex !important;
+}/*# sourceMappingURL=glStyle.css.map */
