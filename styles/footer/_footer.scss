@@ -2,5 +2,6 @@
 @import "../global/templates";
 
 .footer {
-  // Here can be some styles for footer
+  display: none;
+  // We need to show footer with its navigation at mobile (tablet) screens
 }

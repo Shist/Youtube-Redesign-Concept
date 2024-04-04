@@ -6,4 +6,7 @@
   min-height: 84px;
   display: flex;
   align-items: center;
+  &__btn-search {
+    display: none;
+  }
 }
