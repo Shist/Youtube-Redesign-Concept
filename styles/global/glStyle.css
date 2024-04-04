@@ -14,10 +14,24 @@
 @import "../../fonts/Mulish-Regular/font-mulish-regular.css";
 @import "../../fonts/Mulish-Bold/font-mulish-bold.css";
 @import "../../fonts/Mulish-Regular/font-mulish-regular.css";
+.header {
+  padding: 20px 70px 20px 32px;
+  min-height: 84px;
+  display: flex;
+  align-items: center;
+}
+
+.main {
+  flex-grow: 1;
+}
+
 .global-container {
+  min-height: 100vh;
   max-width: 1920px;
   width: 100%;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .hidden-element {

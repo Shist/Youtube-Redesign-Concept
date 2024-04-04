@@ -2,5 +2,8 @@
 @import "../global/templates";
 
 .header {
-  // Here can be some styles for header
+  padding: 20px 70px 20px 32px;
+  min-height: 84px;
+  display: flex;
+  align-items: center;
 }
