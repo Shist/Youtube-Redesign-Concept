@@ -1,0 +1,15 @@
+@import "../../global/vars";
+@import "../../global/templates";
+
+.person-section {
+  &__btns-wrapper {
+  }
+  &__photo-link-wrapper {
+    .person-section__photo {
+    }
+    .person-section__name {
+    }
+  }
+  &__videos-wrapper {
+  }
+}

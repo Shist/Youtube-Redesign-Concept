@@ -1,0 +1,23 @@
+@import "../../global/vars";
+@import "../../global/templates";
+
+.rec-channel-section {
+  &__btns-wrapper {
+    .rec-channel-section__subscribe-btn {
+    }
+    .rec-channel-section__arrow-btns-wrapper {
+    }
+  }
+  &__headline-wrapper {
+    .rec-channel-section__img-link-wrapper {
+      .rec-channel-section__channel-img {
+      }
+      .rec-channel-section__channel-text {
+      }
+    }
+    .rec-channel-section__rec-label {
+    }
+  }
+  &__videos-wrapper {
+  }
+}

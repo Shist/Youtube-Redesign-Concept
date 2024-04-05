@@ -1,0 +1,25 @@
+@import "../../global/vars";
+@import "../../global/templates";
+
+.small-video-card {
+  &__img-wrapper {
+    .small-video-card__time-label {
+    }
+    .small-video-card__img {
+    }
+  }
+  &__video-headline {
+  }
+  &__additional-info-wrapper {
+    .small-video-card__views-date-wrapper {
+      .small-video-card__text-views {
+      }
+      .small-video-card__gray-dot-separator {
+      }
+      .small-video-card__text-date {
+      }
+    }
+    .small-video-card__text-author {
+    }
+  }
+}

@@ -14,6 +14,30 @@
 @import "../../fonts/Mulish-Regular/font-mulish-regular.css";
 @import "../../fonts/Mulish-Bold/font-mulish-bold.css";
 @import "../../fonts/Mulish-Regular/font-mulish-regular.css";
+@import "../../fonts/Mulish-Bold/font-mulish-bold.css";
+@import "../../fonts/Mulish-Regular/font-mulish-regular.css";
+@import "../../fonts/Mulish-Bold/font-mulish-bold.css";
+@import "../../fonts/Mulish-Regular/font-mulish-regular.css";
+@import "../../fonts/Mulish-Bold/font-mulish-bold.css";
+@import "../../fonts/Mulish-Regular/font-mulish-regular.css";
+@import "../../fonts/Mulish-Bold/font-mulish-bold.css";
+@import "../../fonts/Mulish-Regular/font-mulish-regular.css";
+@import "../../fonts/Mulish-Bold/font-mulish-bold.css";
+@import "../../fonts/Mulish-Regular/font-mulish-regular.css";
+@import "../../fonts/Mulish-Bold/font-mulish-bold.css";
+@import "../../fonts/Mulish-Regular/font-mulish-regular.css";
+@import "../../fonts/Mulish-Bold/font-mulish-bold.css";
+@import "../../fonts/Mulish-Regular/font-mulish-regular.css";
+@import "../../fonts/Mulish-Bold/font-mulish-bold.css";
+@import "../../fonts/Mulish-Regular/font-mulish-regular.css";
+@import "../../fonts/Mulish-Bold/font-mulish-bold.css";
+@import "../../fonts/Mulish-Regular/font-mulish-regular.css";
+@import "../../fonts/Mulish-Bold/font-mulish-bold.css";
+@import "../../fonts/Mulish-Regular/font-mulish-regular.css";
+@import "../../fonts/Mulish-Bold/font-mulish-bold.css";
+@import "../../fonts/Mulish-Regular/font-mulish-regular.css";
+@import "../../fonts/Mulish-Bold/font-mulish-bold.css";
+@import "../../fonts/Mulish-Regular/font-mulish-regular.css";
 .header__right-wrapper .header__btn-profile, .header__right-wrapper .header__btns-wrapper .header__btn-bell, .header__right-wrapper .header__btns-wrapper .header__btn-nine-dots, .header__right-wrapper .header__btns-wrapper .header__btn-camera, .header__left-wrapper .header__search-input-wrapper .header__search-btn, .header__left-wrapper .header__burger-btn {
   border: none;
   cursor: pointer;
@@ -147,6 +171,60 @@
   width: 40px;
   height: 40px;
   background: url("../../images/main-pictures/userpicture.png") no-repeat center;
+}
+
+.header__left-wrapper .header__burger-btn, .header__left-wrapper .header__search-input-wrapper .header__search-btn, .header__right-wrapper .header__btns-wrapper .header__btn-camera, .header__right-wrapper .header__btns-wrapper .header__btn-nine-dots, .header__right-wrapper .header__btns-wrapper .header__btn-bell, .header__right-wrapper .header__btn-profile {
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.header__left-wrapper .header__burger-btn:hover, .header__left-wrapper .header__search-input-wrapper .header__search-btn:hover, .header__right-wrapper .header__btns-wrapper .header__btn-camera:hover, .header__right-wrapper .header__btns-wrapper .header__btn-nine-dots:hover, .header__right-wrapper .header__btns-wrapper .header__btn-bell:hover, .header__right-wrapper .header__btn-profile:hover {
+  transform: scale(1.1);
+}
+
+.header__left-wrapper .header__burger-btn, .header__left-wrapper .header__search-input-wrapper .header__search-btn, .header__right-wrapper .header__btns-wrapper .header__btn-camera, .header__right-wrapper .header__btns-wrapper .header__btn-nine-dots, .header__right-wrapper .header__btns-wrapper .header__btn-bell, .header__right-wrapper .header__btn-profile {
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.header__left-wrapper .header__burger-btn:hover, .header__left-wrapper .header__search-input-wrapper .header__search-btn:hover, .header__right-wrapper .header__btns-wrapper .header__btn-camera:hover, .header__right-wrapper .header__btns-wrapper .header__btn-nine-dots:hover, .header__right-wrapper .header__btns-wrapper .header__btn-bell:hover, .header__right-wrapper .header__btn-profile:hover {
+  transform: scale(1.1);
+}
+
+.header__left-wrapper .header__burger-btn, .header__left-wrapper .header__search-input-wrapper .header__search-btn, .header__right-wrapper .header__btns-wrapper .header__btn-camera, .header__right-wrapper .header__btns-wrapper .header__btn-nine-dots, .header__right-wrapper .header__btns-wrapper .header__btn-bell, .header__right-wrapper .header__btn-profile {
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.header__left-wrapper .header__burger-btn:hover, .header__left-wrapper .header__search-input-wrapper .header__search-btn:hover, .header__right-wrapper .header__btns-wrapper .header__btn-camera:hover, .header__right-wrapper .header__btns-wrapper .header__btn-nine-dots:hover, .header__right-wrapper .header__btns-wrapper .header__btn-bell:hover, .header__right-wrapper .header__btn-profile:hover {
+  transform: scale(1.1);
+}
+
+.header__left-wrapper .header__burger-btn, .header__left-wrapper .header__search-input-wrapper .header__search-btn, .header__right-wrapper .header__btns-wrapper .header__btn-camera, .header__right-wrapper .header__btns-wrapper .header__btn-nine-dots, .header__right-wrapper .header__btns-wrapper .header__btn-bell, .header__right-wrapper .header__btn-profile {
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.header__left-wrapper .header__burger-btn:hover, .header__left-wrapper .header__search-input-wrapper .header__search-btn:hover, .header__right-wrapper .header__btns-wrapper .header__btn-camera:hover, .header__right-wrapper .header__btns-wrapper .header__btn-nine-dots:hover, .header__right-wrapper .header__btns-wrapper .header__btn-bell:hover, .header__right-wrapper .header__btn-profile:hover {
+  transform: scale(1.1);
+}
+
+.header__left-wrapper .header__burger-btn, .header__left-wrapper .header__search-input-wrapper .header__search-btn, .header__right-wrapper .header__btns-wrapper .header__btn-camera, .header__right-wrapper .header__btns-wrapper .header__btn-nine-dots, .header__right-wrapper .header__btns-wrapper .header__btn-bell, .header__right-wrapper .header__btn-profile {
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.header__left-wrapper .header__burger-btn:hover, .header__left-wrapper .header__search-input-wrapper .header__search-btn:hover, .header__right-wrapper .header__btns-wrapper .header__btn-camera:hover, .header__right-wrapper .header__btns-wrapper .header__btn-nine-dots:hover, .header__right-wrapper .header__btns-wrapper .header__btn-bell:hover, .header__right-wrapper .header__btn-profile:hover {
+  transform: scale(1.1);
+}
+
+.header__left-wrapper .header__burger-btn, .header__left-wrapper .header__search-input-wrapper .header__search-btn, .header__right-wrapper .header__btns-wrapper .header__btn-camera, .header__right-wrapper .header__btns-wrapper .header__btn-nine-dots, .header__right-wrapper .header__btns-wrapper .header__btn-bell, .header__right-wrapper .header__btn-profile {
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.header__left-wrapper .header__burger-btn:hover, .header__left-wrapper .header__search-input-wrapper .header__search-btn:hover, .header__right-wrapper .header__btns-wrapper .header__btn-camera:hover, .header__right-wrapper .header__btns-wrapper .header__btn-nine-dots:hover, .header__right-wrapper .header__btns-wrapper .header__btn-bell:hover, .header__right-wrapper .header__btn-profile:hover {
+  transform: scale(1.1);
 }
 
 .header__left-wrapper .header__burger-btn, .header__left-wrapper .header__search-input-wrapper .header__search-btn, .header__right-wrapper .header__btns-wrapper .header__btn-camera, .header__right-wrapper .header__btns-wrapper .header__btn-nine-dots, .header__right-wrapper .header__btns-wrapper .header__btn-bell, .header__right-wrapper .header__btn-profile {

@@ -1,0 +1,27 @@
+@import "../../global/vars";
+@import "../../global/templates";
+
+.nav-section {
+  &__main-nav {
+    .nav-section__main-nav-list {
+    }
+  }
+  &__secondary-nav {
+    .nav-section__secondary-nav-list {
+    }
+  }
+  &__nav-list-item {
+    .nav-section__link {
+    }
+  }
+  &__link-img {
+  }
+  &__link-text {
+  }
+  &__subscriptions-nav {
+    .nav-section__subscriptions-nav-list {
+    }
+  }
+  &__settings-wrapper {
+  }
+}
