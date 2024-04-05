@@ -1,5 +1,15 @@
 @import "./vars";
 
+// Template for default buttons
+%default-btn {
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
 // Default settings of headlines; $f-s - size; $l-h - line height; $c - color
 @mixin default-h($f-s, $l-h, $c) {
   font-family: $font-mulish;

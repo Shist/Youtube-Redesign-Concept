@@ -14,18 +14,163 @@
 @import "../../fonts/Mulish-Regular/font-mulish-regular.css";
 @import "../../fonts/Mulish-Bold/font-mulish-bold.css";
 @import "../../fonts/Mulish-Regular/font-mulish-regular.css";
+.header__right-wrapper .header__btn-profile, .header__right-wrapper .header__btns-wrapper .header__btn-bell, .header__right-wrapper .header__btns-wrapper .header__btn-nine-dots, .header__right-wrapper .header__btns-wrapper .header__btn-camera, .header__left-wrapper .header__search-input-wrapper .header__search-btn, .header__left-wrapper .header__burger-btn {
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.header__right-wrapper .header__btn-profile:hover, .header__right-wrapper .header__btns-wrapper .header__btn-bell:hover, .header__right-wrapper .header__btns-wrapper .header__btn-nine-dots:hover, .header__right-wrapper .header__btns-wrapper .header__btn-camera:hover, .header__left-wrapper .header__search-input-wrapper .header__search-btn:hover, .header__left-wrapper .header__burger-btn:hover {
+  transform: scale(1.1);
+}
+
+.header__right-wrapper .header__btn-profile, .header__right-wrapper .header__btns-wrapper .header__btn-bell, .header__right-wrapper .header__btns-wrapper .header__btn-nine-dots, .header__right-wrapper .header__btns-wrapper .header__btn-camera, .header__left-wrapper .header__search-input-wrapper .header__search-btn, .header__left-wrapper .header__burger-btn {
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.header__right-wrapper .header__btn-profile:hover, .header__right-wrapper .header__btns-wrapper .header__btn-bell:hover, .header__right-wrapper .header__btns-wrapper .header__btn-nine-dots:hover, .header__right-wrapper .header__btns-wrapper .header__btn-camera:hover, .header__left-wrapper .header__search-input-wrapper .header__search-btn:hover, .header__left-wrapper .header__burger-btn:hover {
+  transform: scale(1.1);
+}
+
 .header {
   padding: 20px 70px 20px 32px;
   min-height: 84px;
   display: flex;
+  justify-content: space-between;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
   align-items: center;
 }
-.header__btn-search {
+.header__left-wrapper {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+.header__left-wrapper .header__burger-btn {
+  margin-right: 28px;
+  width: 20px;
+  height: 17px;
+  background: url("../../images/svg-icons/burger-menu.svg") no-repeat center;
+}
+.header__left-wrapper .header__youtube-link {
+  margin-right: 59px;
+  width: 116px;
+  height: 25px;
+  background: url("../../images/main-pictures/youtube.png") no-repeat center;
+}
+.header__left-wrapper .header__search-input-wrapper {
+  position: relative;
+  max-width: 830px;
+  width: 100%;
+}
+.header__left-wrapper .header__search-input-wrapper .header__search-input {
+  font-family: "Mulish";
+  font-size: 16px;
+  line-height: 20px;
+  color: #30384c;
+  padding: 12px 42px 12px 23px;
+  width: 100%;
+  height: 44px;
+  border: none;
+  border-radius: 22px;
+  background-color: rgba(235, 235, 235, 0.3);
+}
+.header__left-wrapper .header__search-input-wrapper .header__search-input::-moz-placeholder {
+  color: rgba(48, 56, 76, 0.4);
+}
+.header__left-wrapper .header__search-input-wrapper .header__search-input::placeholder {
+  color: rgba(48, 56, 76, 0.4);
+}
+.header__left-wrapper .header__search-input-wrapper .header__search-input::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+.header__left-wrapper .header__search-input-wrapper .header__search-input::-ms-clear {
   display: none;
 }
+.header__left-wrapper .header__search-input-wrapper .header__search-btn {
+  position: absolute;
+  top: 13px;
+  right: 17px;
+  width: 19px;
+  height: 19px;
+  background: url("../../images/svg-icons/search.svg") no-repeat center;
+}
+.header__right-wrapper {
+  display: flex;
+  align-items: center;
+}
+.header__right-wrapper .header__btns-wrapper {
+  margin-right: 45px;
+  padding-right: 5px;
+  display: flex;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+  align-items: center;
+}
+.header__right-wrapper .header__btns-wrapper .header__btn-camera {
+  width: 27px;
+  height: 20px;
+  background: url("../../images/svg-icons/camera.svg") no-repeat center;
+}
+.header__right-wrapper .header__btns-wrapper .header__btn-nine-dots {
+  width: 21px;
+  height: 21px;
+  background: url("../../images/svg-icons/nine-dots.svg") no-repeat center;
+}
+.header__right-wrapper .header__btns-wrapper .header__btn-bell {
+  position: relative;
+  width: 22px;
+  height: 26px;
+  background: url("../../images/svg-icons/bell.svg") no-repeat center;
+}
+.header__right-wrapper .header__btns-wrapper .header__btn-bell .header__bell-notifications {
+  font-family: "Mulish";
+  font-size: 12px;
+  line-height: 15px;
+  color: #ffffff;
+  position: absolute;
+  top: -6px;
+  right: -5px;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  border: 1px solid #ffffff;
+  border-radius: 100%;
+}
+.header__right-wrapper .header__btn-search {
+  display: none;
+}
+.header__right-wrapper .header__btn-profile {
+  width: 40px;
+  height: 40px;
+  background: url("../../images/main-pictures/userpicture.png") no-repeat center;
+}
+
+.header__left-wrapper .header__burger-btn, .header__left-wrapper .header__search-input-wrapper .header__search-btn, .header__right-wrapper .header__btns-wrapper .header__btn-camera, .header__right-wrapper .header__btns-wrapper .header__btn-nine-dots, .header__right-wrapper .header__btns-wrapper .header__btn-bell, .header__right-wrapper .header__btn-profile {
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.header__left-wrapper .header__burger-btn:hover, .header__left-wrapper .header__search-input-wrapper .header__search-btn:hover, .header__right-wrapper .header__btns-wrapper .header__btn-camera:hover, .header__right-wrapper .header__btns-wrapper .header__btn-nine-dots:hover, .header__right-wrapper .header__btns-wrapper .header__btn-bell:hover, .header__right-wrapper .header__btn-profile:hover {
+  transform: scale(1.1);
+}
+
 .main {
   flex-grow: 1;
+  background-color: #c2c2c2;
 }
+.header__left-wrapper .header__burger-btn, .header__left-wrapper .header__search-input-wrapper .header__search-btn, .header__right-wrapper .header__btns-wrapper .header__btn-camera, .header__right-wrapper .header__btns-wrapper .header__btn-nine-dots, .header__right-wrapper .header__btns-wrapper .header__btn-bell, .header__right-wrapper .header__btn-profile {
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.header__left-wrapper .header__burger-btn:hover, .header__left-wrapper .header__search-input-wrapper .header__search-btn:hover, .header__right-wrapper .header__btns-wrapper .header__btn-camera:hover, .header__right-wrapper .header__btns-wrapper .header__btn-nine-dots:hover, .header__right-wrapper .header__btns-wrapper .header__btn-bell:hover, .header__right-wrapper .header__btn-profile:hover {
+  transform: scale(1.1);
+}
+
 .footer {
   display: none;
 }

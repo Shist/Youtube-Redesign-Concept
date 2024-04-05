@@ -5,24 +5,111 @@
   padding: 20px 70px 20px 32px;
   min-height: 84px;
   display: flex;
+  justify-content: space-between;
+  column-gap: 20px;
   align-items: center;
-  &__burger-btn {
-  }
-  &__youtube-link {
-  }
-  &__search-input {
-  }
-  &__btns-wrapper {
-    .header__btn-camera {
+  &__left-wrapper {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    .header__burger-btn {
+      @extend %default-btn;
+      margin-right: 28px;
+      width: 20px;
+      height: 17px;
+      background: url("../../images/svg-icons/burger-menu.svg") no-repeat center;
     }
-    .header__btn-nine-dots {
+    .header__youtube-link {
+      margin-right: 59px;
+      width: 116px;
+      height: 25px;
+      background: url("../../images/main-pictures/youtube.png") no-repeat center;
     }
-    .header__btn-bell {
+    .header__search-input-wrapper {
+      position: relative;
+      max-width: 830px;
+      width: 100%;
+      .header__search-input {
+        @include default-span(16px, 20px, $color-dark-gray);
+        padding: 12px 42px 12px 23px;
+        width: 100%;
+        height: 44px;
+        border: none;
+        border-radius: 22px;
+        background-color: rgba($color-very-light-gray, 0.3);
+        &::placeholder {
+          color: rgba($color-dark-gray, 0.4);
+        }
+        &::-webkit-search-cancel-button {
+          -webkit-appearance: none;
+        }
+        &::-ms-clear {
+          display: none;
+        }
+      }
+      .header__search-btn {
+        @extend %default-btn;
+        position: absolute;
+        top: 13px;
+        right: 17px;
+        width: 19px;
+        height: 19px;
+        background: url("../../images/svg-icons/search.svg") no-repeat center;
+      }
     }
   }
-  &__btn-search {
-    display: none;
-  }
-  &__btn-profile {
+  &__right-wrapper {
+    display: flex;
+    align-items: center;
+    .header__btns-wrapper {
+      margin-right: 45px;
+      padding-right: 5px;
+      display: flex;
+      column-gap: 50px;
+      align-items: center;
+      .header__btn-camera {
+        @extend %default-btn;
+        width: 27px;
+        height: 20px;
+        background: url("../../images/svg-icons/camera.svg") no-repeat center;
+      }
+      .header__btn-nine-dots {
+        @extend %default-btn;
+        width: 21px;
+        height: 21px;
+        background: url("../../images/svg-icons/nine-dots.svg") no-repeat center;
+      }
+      .header__btn-bell {
+        position: relative;
+        @extend %default-btn;
+        width: 22px;
+        height: 26px;
+        background: url("../../images/svg-icons/bell.svg") no-repeat center;
+        .header__bell-notifications {
+          @include default-span(12px, 15px, $color-white);
+          position: absolute;
+          top: -6px;
+          right: -5px;
+          width: 18px;
+          height: 18px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: red;
+          border: 1px solid $color-white;
+          border-radius: 100%;
+        }
+      }
+    }
+    .header__btn-search {
+      display: none;
+    }
+    .header__btn-profile {
+      @extend %default-btn;
+      width: 40px;
+      height: 40px;
+      background: url("../../images/main-pictures/userpicture.png") no-repeat
+        center;
+    }
   }
 }
