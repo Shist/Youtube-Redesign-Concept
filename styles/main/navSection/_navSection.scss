@@ -122,7 +122,7 @@
   &__subscriptions-nav {
     margin-bottom: 104px;
     .nav-section__subscriptions-headline {
-      @include default-span(18px, 23px, $color-black);
+      @include default-h(18px, 23px, $color-black);
       margin-bottom: 30px;
     }
     .nav-section__subscriptions-nav-list {

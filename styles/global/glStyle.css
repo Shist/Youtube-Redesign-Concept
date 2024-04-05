@@ -316,6 +316,7 @@
 }
 .nav-section__subscriptions-nav .nav-section__subscriptions-headline {
   font-family: "Mulish";
+  font-weight: bold;
   font-size: 18px;
   line-height: 23px;
   color: #000000;
@@ -345,8 +346,49 @@
   transform: scale(1.1);
 }
 
+.person-section {
+  margin-bottom: 49px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.person-section__btns-wrapper {
+  position: absolute;
+  top: 24px;
+  right: 149px;
+  display: flex;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.person-section__photo-link-wrapper {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.person-section__photo-link-wrapper:hover {
+  transform: scale(1.05);
+}
+.person-section__photo-link-wrapper .person-section__photo {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+.person-section__photo-link-wrapper .person-section__name {
+  font-family: "Mulish";
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 33px;
+  color: #000000;
+}
 .person-section__videos-wrapper {
   display: flex;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
 }
 
 .header__left-wrapper .header__burger-btn, .header__left-wrapper .header__search-input-wrapper .header__search-btn, .header__right-wrapper .header__btns-wrapper .header__btn-camera, .header__right-wrapper .header__btns-wrapper .header__btn-nine-dots, .header__right-wrapper .header__btns-wrapper .header__btn-bell, .header__right-wrapper .header__btn-profile {
@@ -358,6 +400,15 @@
   transform: scale(1.1);
 }
 
+.rec-videos-section {
+  margin-bottom: 50px;
+  position: relative;
+}
+.rec-videos-section__btns-wrapper {
+  position: absolute;
+  top: 22px;
+  right: 149px;
+}
 .rec-videos-section__videos-wrapper {
   display: flex;
 }
@@ -371,6 +422,14 @@
   transform: scale(1.1);
 }
 
+.rec-channel-section {
+  position: relative;
+}
+.rec-channel-section__btns-wrapper {
+  position: absolute;
+  top: 5px;
+  right: 149px;
+}
 .rec-channel-section__videos-wrapper {
   display: flex;
 }
@@ -382,6 +441,79 @@
 }
 .header__left-wrapper .header__burger-btn:hover, .header__left-wrapper .header__search-input-wrapper .header__search-btn:hover, .header__right-wrapper .header__btns-wrapper .header__btn-camera:hover, .header__right-wrapper .header__btns-wrapper .header__btn-nine-dots:hover, .header__right-wrapper .header__btns-wrapper .header__btn-bell:hover, .header__right-wrapper .header__btn-profile:hover {
   transform: scale(1.1);
+}
+
+.small-video-card {
+  width: 250px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+}
+.small-video-card__img-wrapper {
+  margin-bottom: 10px;
+  position: relative;
+}
+.small-video-card__img-wrapper .small-video-card__time-label {
+  font-family: "Mulish";
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: 47px;
+  height: 24px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.small-video-card__img-wrapper .small-video-card__img {
+  width: 250px;
+  height: 150px;
+  border-radius: 14px;
+}
+.small-video-card__video-headline {
+  font-family: "Mulish";
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #19202c;
+  margin-bottom: 4px;
+}
+.small-video-card__additional-info-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.small-video-card__additional-info-wrapper .small-video-card__views-date-wrapper {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+}
+.small-video-card__additional-info-wrapper .small-video-card__views-date-wrapper .small-video-card__text-views {
+  font-family: "Mulish";
+  font-size: 13px;
+  line-height: 16px;
+  color: #c2c2c2;
+}
+.small-video-card__additional-info-wrapper .small-video-card__views-date-wrapper .small-video-card__gray-dot-separator {
+  width: 1px;
+  height: 1px;
+  background-color: #c2c2c2;
+}
+.small-video-card__additional-info-wrapper .small-video-card__views-date-wrapper .small-video-card__text-date {
+  font-family: "Mulish";
+  font-size: 13px;
+  line-height: 16px;
+  color: #c2c2c2;
+}
+.small-video-card__additional-info-wrapper .small-video-card__text-author {
+  font-family: "Mulish";
+  font-size: 13px;
+  line-height: 16px;
+  color: #c2c2c2;
 }
 
 .header__left-wrapper .header__burger-btn, .header__left-wrapper .header__search-input-wrapper .header__search-btn, .header__right-wrapper .header__btns-wrapper .header__btn-camera, .header__right-wrapper .header__btns-wrapper .header__btn-nine-dots, .header__right-wrapper .header__btns-wrapper .header__btn-bell, .header__right-wrapper .header__btn-profile {
@@ -432,4 +564,21 @@
 
 .appeared-flex {
   display: flex !important;
+}
+
+.arrow-btn {
+  width: 28px;
+  height: 28px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.arrow-btn_left {
+  background: url("../../images/svg-icons/left-arrow.svg") no-repeat center;
+}
+.arrow-btn_right {
+  background: url("../../images/svg-icons/right-arrow.svg") no-repeat center;
+}
+.arrow-btn:hover {
+  transform: scale(1.1);
 }/*# sourceMappingURL=glStyle.css.map */

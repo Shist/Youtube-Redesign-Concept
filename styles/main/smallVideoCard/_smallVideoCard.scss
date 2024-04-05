@@ -2,24 +2,57 @@
 @import "../../global/templates";
 
 .small-video-card {
+  width: 250px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
   &__img-wrapper {
+    margin-bottom: 10px;
+    position: relative;
     .small-video-card__time-label {
+      @include default-span(14px, 18px, $color-white);
+      position: absolute;
+      right: 10px;
+      bottom: 10px;
+      width: 47px;
+      height: 24px;
+      border-radius: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba($color-black, 0.3);
     }
     .small-video-card__img {
+      width: 250px;
+      height: 150px;
+      border-radius: 14px;
     }
   }
   &__video-headline {
+    @include default-h(16px, 20px, $color-dark-blue);
+    margin-bottom: 4px;
   }
   &__additional-info-wrapper {
+    display: flex;
+    justify-content: space-between;
     .small-video-card__views-date-wrapper {
+      display: flex;
+      align-items: center;
+      column-gap: 8px;
       .small-video-card__text-views {
+        @include default-span(13px, 16px, $color-light-gray);
       }
       .small-video-card__gray-dot-separator {
+        width: 1px;
+        height: 1px;
+        background-color: $color-light-gray;
       }
       .small-video-card__text-date {
+        @include default-span(13px, 16px, $color-light-gray);
       }
     }
     .small-video-card__text-author {
+      @include default-span(13px, 16px, $color-light-gray);
     }
   }
 }

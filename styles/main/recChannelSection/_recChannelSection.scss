@@ -2,7 +2,11 @@
 @import "../../global/templates";
 
 .rec-channel-section {
+  position: relative;
   &__btns-wrapper {
+    position: absolute;
+    top: 5px;
+    right: 149px;
     .rec-channel-section__subscribe-btn {
     }
     .rec-channel-section__arrow-btns-wrapper {

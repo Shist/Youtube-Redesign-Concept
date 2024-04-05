@@ -24,8 +24,19 @@
   display: flex !important;
 }
 
-.left-arrow-btn {
-}
-
-.right-arrow-btn {
+.arrow-btn {
+  width: 28px;
+  height: 28px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  &_left {
+    background: url("../../images/svg-icons/left-arrow.svg") no-repeat center;
+  }
+  &_right {
+    background: url("../../images/svg-icons/right-arrow.svg") no-repeat center;
+  }
+  &:hover {
+    transform: scale(1.1);
+  }
 }

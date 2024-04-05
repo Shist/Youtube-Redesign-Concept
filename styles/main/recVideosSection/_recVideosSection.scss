@@ -2,7 +2,12 @@
 @import "../../global/templates";
 
 .rec-videos-section {
+  margin-bottom: 50px;
+  position: relative;
   &__btns-wrapper {
+    position: absolute;
+    top: 22px;
+    right: 149px;
   }
   &__headline {
   }
