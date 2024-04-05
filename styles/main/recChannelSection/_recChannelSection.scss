@@ -73,8 +73,17 @@
       }
     }
   }
-  &__videos-wrapper {
-    display: flex;
-    column-gap: 40px;
+  &__videos-block-wrapper {
+    width: 100%;
+    .rec-channel-section__videos-wrapper {
+      display: flex;
+      column-gap: 40px;
+      overflow-x: scroll;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
   }
 }

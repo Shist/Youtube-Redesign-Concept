@@ -474,16 +474,26 @@
   line-height: 33px;
   color: #000000;
 }
-.person-section__videos-wrapper {
+.person-section__videos-block-wrapper {
+  width: 100%;
+}
+.person-section__videos-block-wrapper .person-section__videos-wrapper {
   display: flex;
   -moz-column-gap: 40px;
        column-gap: 40px;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.person-section__videos-block-wrapper .person-section__videos-wrapper::-webkit-scrollbar {
+  display: none;
 }
 @media (max-width: 480px) {
-  .person-section__videos-wrapper {
+  .person-section__videos-block-wrapper .person-section__videos-wrapper {
     flex-direction: column;
     width: 100%;
     row-gap: 30px;
+    overflow-x: visible;
   }
 }
 
@@ -530,6 +540,12 @@
   display: flex;
   -moz-column-gap: 40px;
        column-gap: 40px;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.rec-videos-section__videos-wrapper::-webkit-scrollbar {
+  display: none;
 }
 
 .header__left-wrapper .header__burger-btn, .header__left-wrapper .header__search-input-wrapper .header__input-search-btn, .header__right-wrapper .header__btns-wrapper .header__btn-camera, .header__right-wrapper .header__btns-wrapper .header__btn-nine-dots, .header__right-wrapper .header__btns-wrapper .header__btn-bell, .header__right-wrapper .header__btn-search, .header__right-wrapper .header__btn-profile {
@@ -637,10 +653,19 @@
     display: none;
   }
 }
-.rec-channel-section__videos-wrapper {
+.rec-channel-section__videos-block-wrapper {
+  width: 100%;
+}
+.rec-channel-section__videos-block-wrapper .rec-channel-section__videos-wrapper {
   display: flex;
   -moz-column-gap: 40px;
        column-gap: 40px;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.rec-channel-section__videos-block-wrapper .rec-channel-section__videos-wrapper::-webkit-scrollbar {
+  display: none;
 }
 
 .header__left-wrapper .header__burger-btn, .header__left-wrapper .header__search-input-wrapper .header__input-search-btn, .header__right-wrapper .header__btns-wrapper .header__btn-camera, .header__right-wrapper .header__btns-wrapper .header__btn-nine-dots, .header__right-wrapper .header__btns-wrapper .header__btn-bell, .header__right-wrapper .header__btn-search, .header__right-wrapper .header__btn-profile {
@@ -810,7 +835,7 @@
 }
 .main__main-content-section {
   padding: 10px 0 0 10px;
-  overflow: hidden;
+  overflow-x: auto;
 }
 @media (max-width: 768px) {
   .main__main-content-section {

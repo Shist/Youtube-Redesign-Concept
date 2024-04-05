@@ -45,13 +45,23 @@
       @include default-h(26px, 33px, $color-black);
     }
   }
-  &__videos-wrapper {
-    display: flex;
-    column-gap: 40px;
-    @media (max-width: $phone-l) {
-      flex-direction: column;
-      width: 100%;
-      row-gap: 30px;
+  &__videos-block-wrapper {
+    width: 100%;
+    .person-section__videos-wrapper {
+      display: flex;
+      column-gap: 40px;
+      overflow-x: scroll;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      @media (max-width: $phone-l) {
+        flex-direction: column;
+        width: 100%;
+        row-gap: 30px;
+        overflow-x: visible;
+      }
     }
   }
 }
