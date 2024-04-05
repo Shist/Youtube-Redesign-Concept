@@ -1,0 +1,43 @@
+@import "../../global/vars";
+@import "../../global/templates";
+
+.big-video-card {
+  width: 540px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  &__img-wrapper {
+    margin-bottom: 10px;
+    position: relative;
+    width: 540px;
+    height: 250px;
+    .big-video-card__img {
+      width: 540px;
+      height: 250px;
+      border-radius: 14px;
+    }
+  }
+  &__video-headline {
+    @include default-h(16px, 20px, $color-dark-blue);
+    margin-bottom: 5px;
+  }
+  &__additional-info-wrapper {
+    display: flex;
+    justify-content: space-between;
+    .big-video-card__views-date-wrapper {
+      display: flex;
+      align-items: center;
+      column-gap: 8px;
+      .big-video-card__text-views {
+        @include default-span(12px, 15px, $color-light-gray);
+      }
+      .big-video-card__text-date {
+        @include default-span(12px, 15px, $color-light-gray);
+      }
+    }
+    .big-video-card__text-author {
+      @include default-span(12px, 15px, $color-light-gray);
+    }
+  }
+}

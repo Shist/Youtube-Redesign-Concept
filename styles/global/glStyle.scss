@@ -6,9 +6,12 @@
 
 // Global container of whole page
 .global-container {
+  min-height: 100vh;
   max-width: 1920px;
   width: 100%;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 // This class is needed to hide elements (by adding this class)
@@ -19,4 +22,41 @@
 // This class is needed to make flex elements appear (by adding this class)
 .appeared-flex {
   display: flex !important;
+}
+
+.arrow-btn {
+  width: 28px;
+  height: 28px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  &_left {
+    background: url("../../images/svg-icons/left-arrow.svg") no-repeat center;
+  }
+  &_right {
+    background: url("../../images/svg-icons/right-arrow.svg") no-repeat center;
+  }
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.time-label {
+  @include default-span(14px, 18px, $color-white);
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: 47px;
+  height: 24px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba($color-black, 0.3);
+}
+
+.gray-dot-separator {
+  width: 1px;
+  height: 1px;
+  background-color: $color-light-gray;
 }

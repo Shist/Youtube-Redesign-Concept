@@ -1,3 +1,28 @@
 @import "./vars";
 
-// Here can be some default styles or templates
+// Template for default buttons
+%default-btn {
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+// Default settings of headlines; $f-s - size; $l-h - line height; $c - color
+@mixin default-h($f-s, $l-h, $c) {
+  font-family: $font-mulish;
+  font-weight: bold;
+  font-size: $f-s;
+  line-height: $l-h;
+  color: $c;
+}
+
+// Default settings of spans; $f-s - size; $l-h - line height; $c - color
+@mixin default-span($f-s, $l-h, $c) {
+  font-family: $font-mulish;
+  font-size: $f-s;
+  line-height: $l-h;
+  color: $c;
+}
