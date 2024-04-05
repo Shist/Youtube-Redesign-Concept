@@ -40,3 +40,23 @@
     transform: scale(1.1);
   }
 }
+
+.time-label {
+  @include default-span(14px, 18px, $color-white);
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: 47px;
+  height: 24px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba($color-black, 0.3);
+}
+
+.gray-dot-separator {
+  width: 1px;
+  height: 1px;
+  background-color: $color-light-gray;
+}

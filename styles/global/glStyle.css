@@ -409,8 +409,18 @@
   top: 22px;
   right: 149px;
 }
+.rec-videos-section__headline {
+  font-family: "Mulish";
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 33px;
+  color: #19202c;
+  margin-bottom: 30px;
+}
 .rec-videos-section__videos-wrapper {
   display: flex;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
 }
 
 .header__left-wrapper .header__burger-btn, .header__left-wrapper .header__search-input-wrapper .header__search-btn, .header__right-wrapper .header__btns-wrapper .header__btn-camera, .header__right-wrapper .header__btns-wrapper .header__btn-nine-dots, .header__right-wrapper .header__btns-wrapper .header__btn-bell, .header__right-wrapper .header__btn-profile {
@@ -453,22 +463,6 @@
   margin-bottom: 10px;
   position: relative;
 }
-.small-video-card__img-wrapper .small-video-card__time-label {
-  font-family: "Mulish";
-  font-size: 14px;
-  line-height: 18px;
-  color: #ffffff;
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
-  width: 47px;
-  height: 24px;
-  border-radius: 12px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.3);
-}
 .small-video-card__img-wrapper .small-video-card__img {
   width: 250px;
   height: 150px;
@@ -498,11 +492,6 @@
   line-height: 16px;
   color: #c2c2c2;
 }
-.small-video-card__additional-info-wrapper .small-video-card__views-date-wrapper .small-video-card__gray-dot-separator {
-  width: 1px;
-  height: 1px;
-  background-color: #c2c2c2;
-}
 .small-video-card__additional-info-wrapper .small-video-card__views-date-wrapper .small-video-card__text-date {
   font-family: "Mulish";
   font-size: 13px;
@@ -523,6 +512,58 @@
 }
 .header__left-wrapper .header__burger-btn:hover, .header__left-wrapper .header__search-input-wrapper .header__search-btn:hover, .header__right-wrapper .header__btns-wrapper .header__btn-camera:hover, .header__right-wrapper .header__btns-wrapper .header__btn-nine-dots:hover, .header__right-wrapper .header__btns-wrapper .header__btn-bell:hover, .header__right-wrapper .header__btn-profile:hover {
   transform: scale(1.1);
+}
+
+.big-video-card {
+  width: 540px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+.big-video-card__img-wrapper {
+  margin-bottom: 10px;
+  position: relative;
+}
+.big-video-card__img-wrapper .big-video-card__img {
+  width: 540px;
+  height: 250px;
+  border-radius: 14px;
+}
+.big-video-card__video-headline {
+  font-family: "Mulish";
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #19202c;
+  margin-bottom: 5px;
+}
+.big-video-card__additional-info-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.big-video-card__additional-info-wrapper .big-video-card__views-date-wrapper {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+}
+.big-video-card__additional-info-wrapper .big-video-card__views-date-wrapper .big-video-card__text-views {
+  font-family: "Mulish";
+  font-size: 12px;
+  line-height: 15px;
+  color: #c2c2c2;
+}
+.big-video-card__additional-info-wrapper .big-video-card__views-date-wrapper .big-video-card__text-date {
+  font-family: "Mulish";
+  font-size: 12px;
+  line-height: 15px;
+  color: #c2c2c2;
+}
+.big-video-card__additional-info-wrapper .big-video-card__text-author {
+  font-family: "Mulish";
+  font-size: 12px;
+  line-height: 15px;
+  color: #c2c2c2;
 }
 
 .main {
@@ -581,4 +622,27 @@
 }
 .arrow-btn:hover {
   transform: scale(1.1);
+}
+
+.time-label {
+  font-family: "Mulish";
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: 47px;
+  height: 24px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.gray-dot-separator {
+  width: 1px;
+  height: 1px;
+  background-color: #c2c2c2;
 }/*# sourceMappingURL=glStyle.css.map */

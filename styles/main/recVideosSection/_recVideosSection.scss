@@ -10,8 +10,11 @@
     right: 149px;
   }
   &__headline {
+    @include default-h(26px, 33px, $color-dark-blue);
+    margin-bottom: 30px;
   }
   &__videos-wrapper {
     display: flex;
+    column-gap: 40px;
   }
 }
