@@ -406,7 +406,7 @@
 }
 .rec-videos-section__btns-wrapper {
   position: absolute;
-  top: 22px;
+  top: 5px;
   right: 149px;
   display: flex;
   -moz-column-gap: 10px;
@@ -534,6 +534,8 @@
 .small-video-card__img-wrapper {
   margin-bottom: 10px;
   position: relative;
+  width: 250px;
+  height: 150px;
 }
 .small-video-card__img-wrapper .small-video-card__img {
   width: 250px;
@@ -596,6 +598,8 @@
 .big-video-card__img-wrapper {
   margin-bottom: 10px;
   position: relative;
+  width: 540px;
+  height: 250px;
 }
 .big-video-card__img-wrapper .big-video-card__img {
   width: 540px;
@@ -643,8 +647,8 @@
   flex-grow: 1;
   padding-block: 20px 30px;
   display: flex;
-  -moz-column-gap: 26px;
-       column-gap: 26px;
+  -moz-column-gap: 25px;
+       column-gap: 25px;
 }
 .main__main-content-section {
   padding: 10px 0 0 10px;
