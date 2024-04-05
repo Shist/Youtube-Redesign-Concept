@@ -8,6 +8,8 @@
     position: absolute;
     top: 22px;
     right: 149px;
+    display: flex;
+    column-gap: 10px;
   }
   &__headline {
     @include default-h(26px, 33px, $color-dark-blue);
