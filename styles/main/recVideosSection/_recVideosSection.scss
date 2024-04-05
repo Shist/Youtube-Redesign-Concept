@@ -4,12 +4,18 @@
 .rec-videos-section {
   margin-bottom: 50px;
   position: relative;
+  @media (max-width: $phone-l) {
+    display: none;
+  }
   &__btns-wrapper {
     position: absolute;
     top: 5px;
     right: 149px;
     display: flex;
     column-gap: 10px;
+    @media (max-width: $pc-s) {
+      right: 20px;
+    }
   }
   &__headline {
     @include default-h(26px, 33px, $color-dark-blue);

@@ -6,6 +6,9 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  @media (max-width: $phone-l) {
+    display: none;
+  }
   &__btns-wrapper {
     position: absolute;
     top: 16px;
@@ -14,6 +17,10 @@
     display: flex;
     align-items: center;
     column-gap: 40px;
+    @media (max-width: $pc-s) {
+      right: 20px;
+      column-gap: 20px;
+    }
     .rec-channel-section__subscribe-btn {
       @include default-span(16px, 20px, $color-white);
       padding: 10px 20px;
@@ -24,6 +31,9 @@
       transition: 0.3s;
       &:hover {
         transform: scale(1.1);
+      }
+      @media (max-width: $laptop-l) {
+        display: none;
       }
     }
     .rec-channel-section__arrow-btns-wrapper {
@@ -58,6 +68,9 @@
       @include default-span(16px, 20px, $color-light-gray);
       align-self: flex-end;
       margin-bottom: 11px;
+      @media (max-width: $laptop-s) {
+        display: none;
+      }
     }
   }
   &__videos-wrapper {

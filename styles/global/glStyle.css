@@ -38,21 +38,21 @@
 @import "../../fonts/Mulish-Regular/font-mulish-regular.css";
 @import "../../fonts/Mulish-Bold/font-mulish-bold.css";
 @import "../../fonts/Mulish-Regular/font-mulish-regular.css";
-.header__right-wrapper .header__btn-profile, .header__right-wrapper .header__btns-wrapper .header__btn-bell, .header__right-wrapper .header__btns-wrapper .header__btn-nine-dots, .header__right-wrapper .header__btns-wrapper .header__btn-camera, .header__left-wrapper .header__search-input-wrapper .header__search-btn, .header__left-wrapper .header__burger-btn {
+.header__right-wrapper .header__btn-profile, .header__right-wrapper .header__btn-search, .header__right-wrapper .header__btns-wrapper .header__btn-bell, .header__right-wrapper .header__btns-wrapper .header__btn-nine-dots, .header__right-wrapper .header__btns-wrapper .header__btn-camera, .header__left-wrapper .header__search-input-wrapper .header__input-search-btn, .header__left-wrapper .header__burger-btn {
   border: none;
   cursor: pointer;
   transition: 0.3s;
 }
-.header__right-wrapper .header__btn-profile:hover, .header__right-wrapper .header__btns-wrapper .header__btn-bell:hover, .header__right-wrapper .header__btns-wrapper .header__btn-nine-dots:hover, .header__right-wrapper .header__btns-wrapper .header__btn-camera:hover, .header__left-wrapper .header__search-input-wrapper .header__search-btn:hover, .header__left-wrapper .header__burger-btn:hover {
+.header__right-wrapper .header__btn-profile:hover, .header__right-wrapper .header__btn-search:hover, .header__right-wrapper .header__btns-wrapper .header__btn-bell:hover, .header__right-wrapper .header__btns-wrapper .header__btn-nine-dots:hover, .header__right-wrapper .header__btns-wrapper .header__btn-camera:hover, .header__left-wrapper .header__search-input-wrapper .header__input-search-btn:hover, .header__left-wrapper .header__burger-btn:hover {
   transform: scale(1.1);
 }
 
-.header__right-wrapper .header__btn-profile, .header__right-wrapper .header__btns-wrapper .header__btn-bell, .header__right-wrapper .header__btns-wrapper .header__btn-nine-dots, .header__right-wrapper .header__btns-wrapper .header__btn-camera, .header__left-wrapper .header__search-input-wrapper .header__search-btn, .header__left-wrapper .header__burger-btn {
+.header__right-wrapper .header__btn-profile, .header__right-wrapper .header__btn-search, .header__right-wrapper .header__btns-wrapper .header__btn-bell, .header__right-wrapper .header__btns-wrapper .header__btn-nine-dots, .header__right-wrapper .header__btns-wrapper .header__btn-camera, .header__left-wrapper .header__search-input-wrapper .header__input-search-btn, .header__left-wrapper .header__burger-btn {
   border: none;
   cursor: pointer;
   transition: 0.3s;
 }
-.header__right-wrapper .header__btn-profile:hover, .header__right-wrapper .header__btns-wrapper .header__btn-bell:hover, .header__right-wrapper .header__btns-wrapper .header__btn-nine-dots:hover, .header__right-wrapper .header__btns-wrapper .header__btn-camera:hover, .header__left-wrapper .header__search-input-wrapper .header__search-btn:hover, .header__left-wrapper .header__burger-btn:hover {
+.header__right-wrapper .header__btn-profile:hover, .header__right-wrapper .header__btn-search:hover, .header__right-wrapper .header__btns-wrapper .header__btn-bell:hover, .header__right-wrapper .header__btns-wrapper .header__btn-nine-dots:hover, .header__right-wrapper .header__btns-wrapper .header__btn-camera:hover, .header__left-wrapper .header__search-input-wrapper .header__input-search-btn:hover, .header__left-wrapper .header__burger-btn:hover {
   transform: scale(1.1);
 }
 
@@ -65,6 +65,17 @@
        column-gap: 20px;
   align-items: center;
 }
+@media (max-width: 1024px) {
+  .header {
+    padding: 20px 30px;
+  }
+}
+@media (max-width: 480px) {
+  .header {
+    padding: 10px 16px;
+    min-height: 50px;
+  }
+}
 .header__left-wrapper {
   flex-grow: 1;
   display: flex;
@@ -76,16 +87,41 @@
   height: 17px;
   background: url("../../images/svg-icons/burger-menu.svg") no-repeat center;
 }
+@media (max-width: 960px) {
+  .header__left-wrapper .header__burger-btn {
+    margin-right: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .header__left-wrapper .header__burger-btn {
+    display: none;
+  }
+}
 .header__left-wrapper .header__youtube-link {
   margin-right: 59px;
   width: 116px;
   height: 25px;
   background: url("../../images/main-pictures/youtube.png") no-repeat center;
 }
+@media (max-width: 960px) {
+  .header__left-wrapper .header__youtube-link {
+    margin-right: 30px;
+  }
+}
 .header__left-wrapper .header__search-input-wrapper {
   position: relative;
   max-width: 830px;
   width: 100%;
+}
+@media (max-width: 1440px) {
+  .header__left-wrapper .header__search-input-wrapper {
+    width: auto;
+  }
+}
+@media (max-width: 768px) {
+  .header__left-wrapper .header__search-input-wrapper {
+    display: none;
+  }
 }
 .header__left-wrapper .header__search-input-wrapper .header__search-input {
   font-family: "Mulish";
@@ -111,7 +147,7 @@
 .header__left-wrapper .header__search-input-wrapper .header__search-input::-ms-clear {
   display: none;
 }
-.header__left-wrapper .header__search-input-wrapper .header__search-btn {
+.header__left-wrapper .header__search-input-wrapper .header__input-search-btn {
   position: absolute;
   top: 13px;
   right: 17px;
@@ -130,6 +166,18 @@
   -moz-column-gap: 50px;
        column-gap: 50px;
   align-items: center;
+}
+@media (max-width: 960px) {
+  .header__right-wrapper .header__btns-wrapper {
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+    margin-right: 30px;
+  }
+}
+@media (max-width: 480px) {
+  .header__right-wrapper .header__btns-wrapper {
+    display: none;
+  }
 }
 .header__right-wrapper .header__btns-wrapper .header__btn-camera {
   width: 27px;
@@ -165,29 +213,45 @@
   border-radius: 100%;
 }
 .header__right-wrapper .header__btn-search {
+  margin-right: 24px;
+  width: 19px;
+  height: 19px;
+  background: url("../../images/svg-icons/search.svg") no-repeat center;
   display: none;
+}
+@media (max-width: 768px) {
+  .header__right-wrapper .header__btn-search {
+    display: block;
+  }
 }
 .header__right-wrapper .header__btn-profile {
   width: 40px;
   height: 40px;
-  background: url("../../images/main-pictures/userpicture.png") no-repeat center;
+  background: url("../../images/main-pictures/userpicture.png") no-repeat center/cover;
+  border-radius: 100%;
+}
+@media (max-width: 480px) {
+  .header__right-wrapper .header__btn-profile {
+    width: 30px;
+    height: 30px;
+  }
 }
 
-.header__left-wrapper .header__burger-btn, .header__left-wrapper .header__search-input-wrapper .header__search-btn, .header__right-wrapper .header__btns-wrapper .header__btn-camera, .header__right-wrapper .header__btns-wrapper .header__btn-nine-dots, .header__right-wrapper .header__btns-wrapper .header__btn-bell, .header__right-wrapper .header__btn-profile {
+.header__left-wrapper .header__burger-btn, .header__left-wrapper .header__search-input-wrapper .header__input-search-btn, .header__right-wrapper .header__btns-wrapper .header__btn-camera, .header__right-wrapper .header__btns-wrapper .header__btn-nine-dots, .header__right-wrapper .header__btns-wrapper .header__btn-bell, .header__right-wrapper .header__btn-search, .header__right-wrapper .header__btn-profile {
   border: none;
   cursor: pointer;
   transition: 0.3s;
 }
-.header__left-wrapper .header__burger-btn:hover, .header__left-wrapper .header__search-input-wrapper .header__search-btn:hover, .header__right-wrapper .header__btns-wrapper .header__btn-camera:hover, .header__right-wrapper .header__btns-wrapper .header__btn-nine-dots:hover, .header__right-wrapper .header__btns-wrapper .header__btn-bell:hover, .header__right-wrapper .header__btn-profile:hover {
+.header__left-wrapper .header__burger-btn:hover, .header__left-wrapper .header__search-input-wrapper .header__input-search-btn:hover, .header__right-wrapper .header__btns-wrapper .header__btn-camera:hover, .header__right-wrapper .header__btns-wrapper .header__btn-nine-dots:hover, .header__right-wrapper .header__btns-wrapper .header__btn-bell:hover, .header__right-wrapper .header__btn-search:hover, .header__right-wrapper .header__btn-profile:hover {
   transform: scale(1.1);
 }
 
-.header__left-wrapper .header__burger-btn, .header__left-wrapper .header__search-input-wrapper .header__search-btn, .header__right-wrapper .header__btns-wrapper .header__btn-camera, .header__right-wrapper .header__btns-wrapper .header__btn-nine-dots, .header__right-wrapper .header__btns-wrapper .header__btn-bell, .header__right-wrapper .header__btn-profile {
+.header__left-wrapper .header__burger-btn, .header__left-wrapper .header__search-input-wrapper .header__input-search-btn, .header__right-wrapper .header__btns-wrapper .header__btn-camera, .header__right-wrapper .header__btns-wrapper .header__btn-nine-dots, .header__right-wrapper .header__btns-wrapper .header__btn-bell, .header__right-wrapper .header__btn-search, .header__right-wrapper .header__btn-profile {
   border: none;
   cursor: pointer;
   transition: 0.3s;
 }
-.header__left-wrapper .header__burger-btn:hover, .header__left-wrapper .header__search-input-wrapper .header__search-btn:hover, .header__right-wrapper .header__btns-wrapper .header__btn-camera:hover, .header__right-wrapper .header__btns-wrapper .header__btn-nine-dots:hover, .header__right-wrapper .header__btns-wrapper .header__btn-bell:hover, .header__right-wrapper .header__btn-profile:hover {
+.header__left-wrapper .header__burger-btn:hover, .header__left-wrapper .header__search-input-wrapper .header__input-search-btn:hover, .header__right-wrapper .header__btns-wrapper .header__btn-camera:hover, .header__right-wrapper .header__btns-wrapper .header__btn-nine-dots:hover, .header__right-wrapper .header__btns-wrapper .header__btn-bell:hover, .header__right-wrapper .header__btn-search:hover, .header__right-wrapper .header__btn-profile:hover {
   transform: scale(1.1);
 }
 
@@ -198,6 +262,11 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+}
+@media (max-width: 768px) {
+  .nav-section {
+    display: none;
+  }
 }
 .nav-section__main-nav {
   margin-bottom: 60px;
@@ -337,12 +406,12 @@
   transform: scale(1.1);
 }
 
-.header__left-wrapper .header__burger-btn, .header__left-wrapper .header__search-input-wrapper .header__search-btn, .header__right-wrapper .header__btns-wrapper .header__btn-camera, .header__right-wrapper .header__btns-wrapper .header__btn-nine-dots, .header__right-wrapper .header__btns-wrapper .header__btn-bell, .header__right-wrapper .header__btn-profile {
+.header__left-wrapper .header__burger-btn, .header__left-wrapper .header__search-input-wrapper .header__input-search-btn, .header__right-wrapper .header__btns-wrapper .header__btn-camera, .header__right-wrapper .header__btns-wrapper .header__btn-nine-dots, .header__right-wrapper .header__btns-wrapper .header__btn-bell, .header__right-wrapper .header__btn-search, .header__right-wrapper .header__btn-profile {
   border: none;
   cursor: pointer;
   transition: 0.3s;
 }
-.header__left-wrapper .header__burger-btn:hover, .header__left-wrapper .header__search-input-wrapper .header__search-btn:hover, .header__right-wrapper .header__btns-wrapper .header__btn-camera:hover, .header__right-wrapper .header__btns-wrapper .header__btn-nine-dots:hover, .header__right-wrapper .header__btns-wrapper .header__btn-bell:hover, .header__right-wrapper .header__btn-profile:hover {
+.header__left-wrapper .header__burger-btn:hover, .header__left-wrapper .header__search-input-wrapper .header__input-search-btn:hover, .header__right-wrapper .header__btns-wrapper .header__btn-camera:hover, .header__right-wrapper .header__btns-wrapper .header__btn-nine-dots:hover, .header__right-wrapper .header__btns-wrapper .header__btn-bell:hover, .header__right-wrapper .header__btn-search:hover, .header__right-wrapper .header__btn-profile:hover {
   transform: scale(1.1);
 }
 
@@ -353,6 +422,11 @@
   flex-direction: column;
   align-items: flex-start;
 }
+@media (max-width: 480px) {
+  .person-section {
+    margin-bottom: 0;
+  }
+}
 .person-section__btns-wrapper {
   position: absolute;
   top: 24px;
@@ -360,6 +434,16 @@
   display: flex;
   -moz-column-gap: 10px;
        column-gap: 10px;
+}
+@media (max-width: 1280px) {
+  .person-section__btns-wrapper {
+    right: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .person-section__btns-wrapper {
+    display: none;
+  }
 }
 .person-section__photo-link-wrapper {
   margin-bottom: 30px;
@@ -372,6 +456,11 @@
 }
 .person-section__photo-link-wrapper:hover {
   transform: scale(1.05);
+}
+@media (max-width: 480px) {
+  .person-section__photo-link-wrapper {
+    display: none;
+  }
 }
 .person-section__photo-link-wrapper .person-section__photo {
   width: 50px;
@@ -390,19 +479,31 @@
   -moz-column-gap: 40px;
        column-gap: 40px;
 }
+@media (max-width: 480px) {
+  .person-section__videos-wrapper {
+    flex-direction: column;
+    width: 100%;
+    row-gap: 30px;
+  }
+}
 
-.header__left-wrapper .header__burger-btn, .header__left-wrapper .header__search-input-wrapper .header__search-btn, .header__right-wrapper .header__btns-wrapper .header__btn-camera, .header__right-wrapper .header__btns-wrapper .header__btn-nine-dots, .header__right-wrapper .header__btns-wrapper .header__btn-bell, .header__right-wrapper .header__btn-profile {
+.header__left-wrapper .header__burger-btn, .header__left-wrapper .header__search-input-wrapper .header__input-search-btn, .header__right-wrapper .header__btns-wrapper .header__btn-camera, .header__right-wrapper .header__btns-wrapper .header__btn-nine-dots, .header__right-wrapper .header__btns-wrapper .header__btn-bell, .header__right-wrapper .header__btn-search, .header__right-wrapper .header__btn-profile {
   border: none;
   cursor: pointer;
   transition: 0.3s;
 }
-.header__left-wrapper .header__burger-btn:hover, .header__left-wrapper .header__search-input-wrapper .header__search-btn:hover, .header__right-wrapper .header__btns-wrapper .header__btn-camera:hover, .header__right-wrapper .header__btns-wrapper .header__btn-nine-dots:hover, .header__right-wrapper .header__btns-wrapper .header__btn-bell:hover, .header__right-wrapper .header__btn-profile:hover {
+.header__left-wrapper .header__burger-btn:hover, .header__left-wrapper .header__search-input-wrapper .header__input-search-btn:hover, .header__right-wrapper .header__btns-wrapper .header__btn-camera:hover, .header__right-wrapper .header__btns-wrapper .header__btn-nine-dots:hover, .header__right-wrapper .header__btns-wrapper .header__btn-bell:hover, .header__right-wrapper .header__btn-search:hover, .header__right-wrapper .header__btn-profile:hover {
   transform: scale(1.1);
 }
 
 .rec-videos-section {
   margin-bottom: 50px;
   position: relative;
+}
+@media (max-width: 480px) {
+  .rec-videos-section {
+    display: none;
+  }
 }
 .rec-videos-section__btns-wrapper {
   position: absolute;
@@ -411,6 +512,11 @@
   display: flex;
   -moz-column-gap: 10px;
        column-gap: 10px;
+}
+@media (max-width: 1280px) {
+  .rec-videos-section__btns-wrapper {
+    right: 20px;
+  }
 }
 .rec-videos-section__headline {
   font-family: "Mulish";
@@ -426,12 +532,12 @@
        column-gap: 40px;
 }
 
-.header__left-wrapper .header__burger-btn, .header__left-wrapper .header__search-input-wrapper .header__search-btn, .header__right-wrapper .header__btns-wrapper .header__btn-camera, .header__right-wrapper .header__btns-wrapper .header__btn-nine-dots, .header__right-wrapper .header__btns-wrapper .header__btn-bell, .header__right-wrapper .header__btn-profile {
+.header__left-wrapper .header__burger-btn, .header__left-wrapper .header__search-input-wrapper .header__input-search-btn, .header__right-wrapper .header__btns-wrapper .header__btn-camera, .header__right-wrapper .header__btns-wrapper .header__btn-nine-dots, .header__right-wrapper .header__btns-wrapper .header__btn-bell, .header__right-wrapper .header__btn-search, .header__right-wrapper .header__btn-profile {
   border: none;
   cursor: pointer;
   transition: 0.3s;
 }
-.header__left-wrapper .header__burger-btn:hover, .header__left-wrapper .header__search-input-wrapper .header__search-btn:hover, .header__right-wrapper .header__btns-wrapper .header__btn-camera:hover, .header__right-wrapper .header__btns-wrapper .header__btn-nine-dots:hover, .header__right-wrapper .header__btns-wrapper .header__btn-bell:hover, .header__right-wrapper .header__btn-profile:hover {
+.header__left-wrapper .header__burger-btn:hover, .header__left-wrapper .header__search-input-wrapper .header__input-search-btn:hover, .header__right-wrapper .header__btns-wrapper .header__btn-camera:hover, .header__right-wrapper .header__btns-wrapper .header__btn-nine-dots:hover, .header__right-wrapper .header__btns-wrapper .header__btn-bell:hover, .header__right-wrapper .header__btn-search:hover, .header__right-wrapper .header__btn-profile:hover {
   transform: scale(1.1);
 }
 
@@ -440,6 +546,11 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+}
+@media (max-width: 480px) {
+  .rec-channel-section {
+    display: none;
+  }
 }
 .rec-channel-section__btns-wrapper {
   position: absolute;
@@ -450,6 +561,13 @@
   align-items: center;
   -moz-column-gap: 40px;
        column-gap: 40px;
+}
+@media (max-width: 1280px) {
+  .rec-channel-section__btns-wrapper {
+    right: 20px;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
 }
 .rec-channel-section__btns-wrapper .rec-channel-section__subscribe-btn {
   font-family: "Mulish";
@@ -465,6 +583,11 @@
 }
 .rec-channel-section__btns-wrapper .rec-channel-section__subscribe-btn:hover {
   transform: scale(1.1);
+}
+@media (max-width: 1024px) {
+  .rec-channel-section__btns-wrapper .rec-channel-section__subscribe-btn {
+    display: none;
+  }
 }
 .rec-channel-section__btns-wrapper .rec-channel-section__arrow-btns-wrapper {
   display: flex;
@@ -509,18 +632,23 @@
   align-self: flex-end;
   margin-bottom: 11px;
 }
+@media (max-width: 864px) {
+  .rec-channel-section__headline-wrapper .rec-channel-section__rec-label {
+    display: none;
+  }
+}
 .rec-channel-section__videos-wrapper {
   display: flex;
   -moz-column-gap: 40px;
        column-gap: 40px;
 }
 
-.header__left-wrapper .header__burger-btn, .header__left-wrapper .header__search-input-wrapper .header__search-btn, .header__right-wrapper .header__btns-wrapper .header__btn-camera, .header__right-wrapper .header__btns-wrapper .header__btn-nine-dots, .header__right-wrapper .header__btns-wrapper .header__btn-bell, .header__right-wrapper .header__btn-profile {
+.header__left-wrapper .header__burger-btn, .header__left-wrapper .header__search-input-wrapper .header__input-search-btn, .header__right-wrapper .header__btns-wrapper .header__btn-camera, .header__right-wrapper .header__btns-wrapper .header__btn-nine-dots, .header__right-wrapper .header__btns-wrapper .header__btn-bell, .header__right-wrapper .header__btn-search, .header__right-wrapper .header__btn-profile {
   border: none;
   cursor: pointer;
   transition: 0.3s;
 }
-.header__left-wrapper .header__burger-btn:hover, .header__left-wrapper .header__search-input-wrapper .header__search-btn:hover, .header__right-wrapper .header__btns-wrapper .header__btn-camera:hover, .header__right-wrapper .header__btns-wrapper .header__btn-nine-dots:hover, .header__right-wrapper .header__btns-wrapper .header__btn-bell:hover, .header__right-wrapper .header__btn-profile:hover {
+.header__left-wrapper .header__burger-btn:hover, .header__left-wrapper .header__search-input-wrapper .header__input-search-btn:hover, .header__right-wrapper .header__btns-wrapper .header__btn-camera:hover, .header__right-wrapper .header__btns-wrapper .header__btn-nine-dots:hover, .header__right-wrapper .header__btns-wrapper .header__btn-bell:hover, .header__right-wrapper .header__btn-search:hover, .header__right-wrapper .header__btn-profile:hover {
   transform: scale(1.1);
 }
 
@@ -531,16 +659,36 @@
   flex-direction: column;
   cursor: pointer;
 }
+@media (max-width: 480px) {
+  .small-video-card {
+    width: 100%;
+    height: calc((100vw - 32px) / 1.454);
+  }
+}
 .small-video-card__img-wrapper {
   margin-bottom: 10px;
   position: relative;
   width: 250px;
   height: 150px;
 }
+@media (max-width: 480px) {
+  .small-video-card__img-wrapper {
+    width: 100%;
+    height: calc((100vw - 32px) / 1.92);
+  }
+}
 .small-video-card__img-wrapper .small-video-card__img {
   width: 250px;
   height: 150px;
   border-radius: 14px;
+}
+@media (max-width: 480px) {
+  .small-video-card__img-wrapper .small-video-card__img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: calc((100vw - 32px) / 1.92);
+  }
 }
 .small-video-card__video-headline {
   font-family: "Mulish";
@@ -579,12 +727,12 @@
   color: #c2c2c2;
 }
 
-.header__left-wrapper .header__burger-btn, .header__left-wrapper .header__search-input-wrapper .header__search-btn, .header__right-wrapper .header__btns-wrapper .header__btn-camera, .header__right-wrapper .header__btns-wrapper .header__btn-nine-dots, .header__right-wrapper .header__btns-wrapper .header__btn-bell, .header__right-wrapper .header__btn-profile {
+.header__left-wrapper .header__burger-btn, .header__left-wrapper .header__search-input-wrapper .header__input-search-btn, .header__right-wrapper .header__btns-wrapper .header__btn-camera, .header__right-wrapper .header__btns-wrapper .header__btn-nine-dots, .header__right-wrapper .header__btns-wrapper .header__btn-bell, .header__right-wrapper .header__btn-search, .header__right-wrapper .header__btn-profile {
   border: none;
   cursor: pointer;
   transition: 0.3s;
 }
-.header__left-wrapper .header__burger-btn:hover, .header__left-wrapper .header__search-input-wrapper .header__search-btn:hover, .header__right-wrapper .header__btns-wrapper .header__btn-camera:hover, .header__right-wrapper .header__btns-wrapper .header__btn-nine-dots:hover, .header__right-wrapper .header__btns-wrapper .header__btn-bell:hover, .header__right-wrapper .header__btn-profile:hover {
+.header__left-wrapper .header__burger-btn:hover, .header__left-wrapper .header__search-input-wrapper .header__input-search-btn:hover, .header__right-wrapper .header__btns-wrapper .header__btn-camera:hover, .header__right-wrapper .header__btns-wrapper .header__btn-nine-dots:hover, .header__right-wrapper .header__btns-wrapper .header__btn-bell:hover, .header__right-wrapper .header__btn-search:hover, .header__right-wrapper .header__btn-profile:hover {
   transform: scale(1.1);
 }
 
@@ -650,23 +798,115 @@
   -moz-column-gap: 25px;
        column-gap: 25px;
 }
+@media (max-width: 768px) {
+  .main {
+    padding: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .main {
+    padding: 10px 16px 77px;
+  }
+}
 .main__main-content-section {
   padding: 10px 0 0 10px;
   overflow: hidden;
 }
+@media (max-width: 768px) {
+  .main__main-content-section {
+    padding: 0;
+  }
+}
+@media (max-width: 480px) {
+  .main__main-content-section {
+    width: 100%;
+  }
+}
 
-.header__left-wrapper .header__burger-btn, .header__left-wrapper .header__search-input-wrapper .header__search-btn, .header__right-wrapper .header__btns-wrapper .header__btn-camera, .header__right-wrapper .header__btns-wrapper .header__btn-nine-dots, .header__right-wrapper .header__btns-wrapper .header__btn-bell, .header__right-wrapper .header__btn-profile {
+.header__left-wrapper .header__burger-btn, .header__left-wrapper .header__search-input-wrapper .header__input-search-btn, .header__right-wrapper .header__btns-wrapper .header__btn-camera, .header__right-wrapper .header__btns-wrapper .header__btn-nine-dots, .header__right-wrapper .header__btns-wrapper .header__btn-bell, .header__right-wrapper .header__btn-search, .header__right-wrapper .header__btn-profile {
   border: none;
   cursor: pointer;
   transition: 0.3s;
 }
-.header__left-wrapper .header__burger-btn:hover, .header__left-wrapper .header__search-input-wrapper .header__search-btn:hover, .header__right-wrapper .header__btns-wrapper .header__btn-camera:hover, .header__right-wrapper .header__btns-wrapper .header__btn-nine-dots:hover, .header__right-wrapper .header__btns-wrapper .header__btn-bell:hover, .header__right-wrapper .header__btn-profile:hover {
+.header__left-wrapper .header__burger-btn:hover, .header__left-wrapper .header__search-input-wrapper .header__input-search-btn:hover, .header__right-wrapper .header__btns-wrapper .header__btn-camera:hover, .header__right-wrapper .header__btns-wrapper .header__btn-nine-dots:hover, .header__right-wrapper .header__btns-wrapper .header__btn-bell:hover, .header__right-wrapper .header__btn-search:hover, .header__right-wrapper .header__btn-profile:hover {
   transform: scale(1.1);
 }
 
 .footer {
+  padding: 12px 23px;
+  border-top: 1px solid #f1f1f1;
+  width: 100%;
+  height: 62px;
+  position: fixed;
+  bottom: 0;
+  background-color: #ffffff;
   display: none;
 }
+@media (max-width: 768px) {
+  .footer {
+    display: block;
+  }
+}
+.footer__nav .footer__nav-list {
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 320px) {
+  .footer__nav .footer__nav-list {
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 320px) {
+  .footer__nav .footer__nav-list .footer__nav-list-item_home {
+    margin-right: 46px;
+  }
+  .footer__nav .footer__nav-list .footer__nav-list-item_trending {
+    margin-right: 29px;
+  }
+  .footer__nav .footer__nav-list .footer__nav-list-item_subscriptions {
+    margin-right: 34px;
+  }
+}
+.footer__nav .footer__nav-list .footer__nav-list-item .footer__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 5px;
+  text-decoration: none;
+}
+.footer__nav .footer__nav-list .footer__nav-list-item .footer__link .footer__link-img-wrapper {
+  width: 28px;
+  height: 21px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.footer__nav .footer__nav-list .footer__nav-list-item .footer__link .footer__link-img-wrapper .footer__link-img_home {
+  width: 20px;
+  height: 19px;
+}
+.footer__nav .footer__nav-list .footer__nav-list-item .footer__link .footer__link-img-wrapper .footer__link-img_trending {
+  width: 16px;
+  height: 21px;
+}
+.footer__nav .footer__nav-list .footer__nav-list-item .footer__link .footer__link-img-wrapper .footer__link-img_subscriptions {
+  width: 18px;
+  height: 18px;
+}
+.footer__nav .footer__nav-list .footer__nav-list-item .footer__link .footer__link-img-wrapper .footer__link-img_library {
+  width: 20px;
+  height: 16px;
+}
+.footer__nav .footer__nav-list .footer__nav-list-item .footer__link .footer__link-text {
+  font-family: "Mulish";
+  font-size: 10px;
+  line-height: 13px;
+  color: #898989;
+}
+.footer__nav .footer__nav-list .footer__nav-list-item .footer__link .footer__link-text_red {
+  color: #ff0000;
+}
+
 .global-container {
   min-height: 100vh;
   max-width: 1920px;
